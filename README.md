@@ -14,19 +14,19 @@ Home Page:
 
 The home page will contain a header with a button navigating to add a card in the header. In the body it will contain clickable cards for each topic the user can explore flashcards for leading them to the flashcard page. There will be a header with a clickable github link and a email form.
 
-![alt text](https://res.cloudinary.com/dbmxg3su8/image/upload/v1616735047/Screen_Shot_2021-03-25_at_11.34.24_PM_slnuu3.png "Home Page Wireframe")
+![alt text](https://res.cloudinary.com/dbmxg3su8/image/upload/v1616761737/Screen_Shot_2021-03-26_at_8.24.23_AM_ifuf7y.png "Home Page Wireframe")
 
 Flashcard Page:
 
 The flashcard page will have a sidebar that allows the user to select the card they want to view it will also contain a card component that will hold the card definition and name. The card will have a flip button revealing the card details to the user. There will also be left and right arrows that allows for the user to cycle through the cards available in the current topic they are in. At the bottom of that the page will have 3 resource links for the user to read more on each card.
 
-![alt text](https://res.cloudinary.com/dbmxg3su8/image/upload/v1616735047/Screen_Shot_2021-03-25_at_11.35.38_PM_xmfckf.png "Flashcard Page Wireframe")
+![alt text](https://res.cloudinary.com/dbmxg3su8/image/upload/v1616761720/Screen_Shot_2021-03-26_at_8.27.51_AM_njxjjg.png "Flashcard Page Wireframe")
 
 Add a Card Page:
 
 The add a card page will allow for the user to add their own card. This will have a form that the user can fill out and submit the card to be added to the deck. The topic section will be a dropdown to prevent the user from adding a topic that doesn't fit the topics already outlined on the homepage.
 
-![alt text](https://res.cloudinary.com/dbmxg3su8/image/upload/v1616735047/Screen_Shot_2021-03-25_at_11.36.09_PM_appoiu.png "Add a Card Page Wireframe")
+![alt text](https://res.cloudinary.com/dbmxg3su8/image/upload/v1616761720/Screen_Shot_2021-03-26_at_8.28.09_AM_fqgooc.png "Add a Card Page Wireframe")
 
 ## Component Hierarchy
 
