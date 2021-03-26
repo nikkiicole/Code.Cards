@@ -14,7 +14,7 @@ Home Page:
 
 The home page will contain a header with a button navigating to add a card in the header. In the body it will contain clickable cards for each topic the user can explore flashcards for leading them to the flashcard page. There will be a header with a clickable github link and a email form.
 
-![alt text](https://res.cloudinary.com/dbmxg3su8/image/upload/v1616761737/Screen_Shot_2021-03-26_at_8.24.23_AM_ifuf7y.png "Home Page Wireframe")
+![alt text](https://res.cloudinary.com/dbmxg3su8/image/upload/v1616761999/Screen_Shot_2021-03-26_at_8.32.54_AM_tqsmf7.png "Home Page Wireframe")
 
 Flashcard Page:
 
