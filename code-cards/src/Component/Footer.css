@@ -1,0 +1,40 @@
+footer {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: stretch;
+  align-items: center;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  margin-bottom: 0px;
+  margin-top: 50px;
+  /* height: 100%; */
+}
+.Me {
+  color: white;
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  font-size: 20px;
+  /* font-family: "Montserrat", sans-serif; */
+  padding-left: 5px;
+  text-decoration: none;
+}
+
+.Git-Footer {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+.Email {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  font-size: 20px;
+  padding-right: 5px;
+  text-decoration: none;
+}
