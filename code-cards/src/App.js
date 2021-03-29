@@ -28,68 +28,68 @@ function App() {
       <Header />
       <Route exact path ="/">
         {/* render categories */}
-         <Categories />
+      <Categories />
         </Route>
       <Route path ="/arrays">
         {/* render categories */}
-        {cards.map((category) => {
-          console.log(category)
+        {cards.map((card) => {
+          console.log(card)
           // filter(category=> category.includes("Arrays")) 
           //figure out how to filter each category 
           /// tried includes 
           // tried filter 
-          return <Flashcard category={category}
-            key={category.id} />;
+          return <Flashcard card={card}
+            key={card.id} />;
          
         
         })}
       </Route>
       <Route path ="/objects">
         {/* render categories */}
-        {cards.map((category)=>{
-          return <Flashcard category={category} key={category.id} />;
+        {cards.map((card)=>{
+          return <Flashcard card={card} key={card.id} />;
         })}
       </Route>
       <Route path ="/functions">
         {/* render categories */}
-        {cards.map((category)=>{
-          return <Flashcard category={category} key={category.id} />;
+        {cards.map((card)=>{
+          return <Flashcard card={card} key={card.id} />;
         })}
       </Route>
       <Route path ="/statements">
         {/* render categories */}
-        {cards.map((category)=>{
-          return <Flashcard category={category} key={category.id} />;
+        {cards.map((card)=>{
+          return <Flashcard card={card} key={card.id} />;
         })}
       </Route>
       <Route path ="/expressions">
         {/* render categories */}
-        {cards.map((category)=>{
-          return <Flashcard category={category} key={category.id} />;
+        {cards.map((card)=>{
+          return <Flashcard card={card} key={card.id} />;
         })}
       </Route>
       <Route path ="/loops">
         {/* render categories */}
-        {cards.map((category)=>{
-          return <Flashcard category={category} key={category.id} />;
+        {cards.map((card)=>{
+          return <Flashcard card={card} key={card.id} />;
         })}
       </Route>
       <Route path ="/dom">
         {/* render categories */}
-        {cards.map((category)=>{
-          return <Flashcard category={category} key={category.id} />;
+        {cards.map((card)=>{
+          return <Flashcard card={card} key={card.id} />;
         })}
       </Route>
       <Route path ="/react">
         {/* render categories */}
-        {cards.map((category)=>{
-          return <Flashcard category={category} key={category.id} />;
+        {cards.map((card)=>{
+          return <Flashcard card={card} key={card.id} />;
         })}
       </Route>
       <Route path ="/types">
         {/* render categories */}
-        {cards.map((category)=>{
-          return <Flashcard category={category} key={category.id} />;
+        {cards.map((card)=>{
+          return <Flashcard card={card} key={card.id} />;
         })}
       </Route>
       <Route path="/new">

@@ -1,10 +1,59 @@
-import React from 'react'
+import { useEffect, useState } from 'react';
+import axios from "axios";
+import { baseURL, config } from "../services"
+import { useHistory } from "react-router-dom";
 
-function Form() {
+function Form(props) {
+  let [newCard, setNewBook] = useState({
+    categories: "",
+    word: "",
+    definition: "",
+    firstresource: "",
+    secondresource: "",
+    thirdresource: "",
+
+  });
+  const history = useHistory()
+
+  function handleInput(event) {
+
+    let { id, value } = event.target;
+    setNewBook((prevState) => ({ ...prevState, [id]: value }));
+}
+  async function handleSubmit(event) {
+    event.preventDefault()
+    
+    await axios.post(baseURL, { fields: newCard }, config);
+    history.push("/")
+}
   return (
-    <div>
-      FORM
-    </div>
+    <form onSubmit={handleSubmit}>
+      <select id = "categories" required onChange={handleInput} value={newCard.categories}> 
+        <option value = "Types, Values, and Variables" defaultValue>Types, Values, and Variables</option>
+        <option value = "Objects">Objects</option>
+        <option value="Expressions and Operators">Expressions and Operators</option>
+        <option value="Arrays">Arrays </option>
+        <option value="Loops">Loops</option>
+        <option value="Statements">Statements</option>
+        <option value="Functions">Functions</option>
+        <option value="React">React</option>
+        <option value = "The DOM">The DOM</option>
+      </select>
+      <label htmlFor="word">Term: </label>
+      <input type="text" id="word" required onChange={handleInput} value={newCard.word} />
+
+      <label htmlFor="definition">Definition: </label>
+      <input type="text" id="definition" required onChange={handleInput} value={newCard.definition} />
+
+      <label htmlFor="firstresource">First Resource: </label>
+      <input type="url" id="firstresource" placeholder="url" required onChange={handleInput} value={newCard.firstresource} />
+
+      <label htmlFor="secondresource">Second Resource: </label>
+      <input type="url" id="secondresource" placeholder="url" required onChange={handleInput} value={newCard.secondresource} />
+      <label htmlFor="thirdresource">Third Resource: </label>
+      <input type="url" id="thirdresource" placeholder="url" required onChange={handleInput} value={newCard.thirdresource} />
+      <input type="submit" />
+   </form>
   )
 }
 

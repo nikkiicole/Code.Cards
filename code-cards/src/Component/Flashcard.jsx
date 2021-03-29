@@ -2,7 +2,7 @@
 
 function Flashcard(props) {
 
-  let data = props.category.fields;
+  let data = props.card.fields;
   console.log(data)
 
   return (
