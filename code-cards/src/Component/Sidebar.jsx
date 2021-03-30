@@ -1,14 +1,17 @@
 import React from 'react'
+import "./Categories.css"
 
 function Sidebar(props) {
   return (
   
-    <ul>
+    <div className="sidebar">
       {props.cards.map(card => {
         const data = card.fields;
-        return <li onClick={()=>props.setSelectedCard(card)}>{data.word}</li>
+        return <div>
+          <button className="sidebar-buttons" onClick={() => props.setSelectedCard(card)}>{data.word}</button>
+          </div>
       })}
-      </ul>
+      </div>
   )
 }
 

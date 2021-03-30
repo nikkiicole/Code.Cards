@@ -77,7 +77,7 @@ function App() {
         <Form cards={cards }/>
       </Route>
       
-      <p>Hello</p>
+      
         <Footer />
     </div>
   )

@@ -1,4 +1,4 @@
-
+import "./CategoryDetail.css"
 
 function Flashcard(props) {
 
@@ -6,22 +6,23 @@ function Flashcard(props) {
   console.log(data)
 
   return data && (
-    <div>
+    <div className="flashcard">
       
-      <ul>
+      {/* <ul>
         <li>
         {data.categories}
         </li>
-      </ul>
+      </ul> */}
       
       <h2>{data.word}</h2>
-      <p>{ data.definition}</p>
+      <p>{data.definition}</p>
+      
         <h3>Resources:</h3>
-      <ul>
-        <li>{data.firstresource}</li>
-        <li>{data.secondresource}</li>
-        <li>{ data.thirdresource}</li>
-      </ul>
+      <div>
+        <p>{data.firstresource}</p>
+        <p>{data.secondresource}</p>
+        <p>{ data.thirdresource}</p>
+      </div>
       </div>
    
   )

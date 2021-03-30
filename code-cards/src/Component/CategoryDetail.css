@@ -1,0 +1,19 @@
+.cards-container {
+  background-color: aqua;
+  grid-template-areas:
+    "S C"
+    "S C"
+    "S C";
+
+  grid-template-columns: 150px 1fr;
+}
+
+.flashcard {
+  background-color: rgb(92, 52, 52);
+  grid-area: C;
+}
+
+.sidebar {
+  background-color: pink;
+  grid-area: S;
+}

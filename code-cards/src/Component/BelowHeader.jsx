@@ -5,8 +5,7 @@ function BelowHeader() {
   return (
     <div className="wrapper">
     <header className="backgroundheader">
-        <h2> Welcome to code.cards your interactive flashcard experience for new developers.</h2>
-        <h2>Get started by selecting a category below!</h2>
+        <h2> Welcome to Code.Cards your interactive flashcard experience for learning developers!</h2>
       </header>
       </div>
   )

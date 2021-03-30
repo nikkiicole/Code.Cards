@@ -5,19 +5,24 @@
   justify-content: space-around;
   align-content: stretch;
   align-items: center;
-  background-color: black;
-  height: 500px;
-  margin: 20px;
+  background-color: rgb(255, 255, 255);
+  height: 650px;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 50px;
 }
 
 .category {
-  background-color: pink;
-  width: 30%;
+  background-color: rgb(0, 0, 0);
+  width: 31%;
   height: 30%;
-  margin: 5px;
+  margin: 3px;
 }
 
+/* how to center text in the middle of the box */
 .cat-links {
   text-decoration: none;
-  font-size: 30px;
+  font-size: 28px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
 }
