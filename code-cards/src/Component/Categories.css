@@ -12,7 +12,7 @@
   margin-top: 50px;
 }
 
-.category {
+.cat-links {
   background-color: rgb(0, 0, 0);
   width: 31%;
   height: 30%;
@@ -20,7 +20,8 @@
 }
 
 /* how to center text in the middle of the box */
-.cat-links {
+
+.category {
   text-decoration: none;
   font-size: 28px;
   color: white;

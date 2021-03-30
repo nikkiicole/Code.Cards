@@ -11,16 +11,16 @@ function Categories() {
     <div className="div-container">
 
   
-      <div className="category"><Link className="cat-links" to="/arrays" >Arrays</Link></div>
+      <Link className="cat-links" to="/arrays" ><div className="category">Arrays</div></Link>
       
-        <div className="category"><Link className="cat-links" to="/objects">Objects</Link></div>
-        <div className="category"><Link className="cat-links" to="/functions">Functions</Link></div>
-        <div className="category"><Link className="cat-links" to="/statements">Statements</Link></div>
-        <div className="category"><Link className="cat-links" to="/expressions">Expressions and Operators</Link></div>
-        <div className="category"><Link className="cat-links" to="/loops">Loops</Link></div>
-        <div className="category"><Link className="cat-links" to="/dom">The DOM</Link></div>
-        <div className="category"><Link className="cat-links" to="/react">React</Link></div>
-        <div className="category"><Link className="cat-links" to="/types">Types, Values, and Variables</Link></div>
+        <Link className="cat-links" to="/objects"><div className="category">Objects</div></Link>
+        <Link className="cat-links" to="/functions"><div className="category">Functions</div></Link>
+        <Link className="cat-links" to="/statements"><div className="category">Statements</div></Link>
+        <Link className="cat-links" to="/expressions"><div className="category">Expressions and Operators</div></Link>
+        <Link className="cat-links" to="/loops"><div className="category">Loops</div></Link>
+        <Link className="cat-links" to="/dom"><div className="category">The DOM</div></Link>
+        <Link className="cat-links" to="/react"><div className="category">React</div></Link>
+        <Link className="cat-links" to="/types"><div className="category">Types, Values, and Variables</div></Link>
   
     </div>
   )

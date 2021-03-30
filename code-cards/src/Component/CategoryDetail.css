@@ -1,19 +1,34 @@
 .cards-container {
   background-color: aqua;
-  grid-template-areas:
+  /* grid-template-areas:
     "S C"
     "S C"
     "S C";
 
-  grid-template-columns: 150px 1fr;
+  grid-template-columns: 150px 1fr; */
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
 }
 
 .flashcard {
   background-color: rgb(92, 52, 52);
-  grid-area: C;
+  /* grid-area: C; */
+
+  order: 0;
+  flex: 2 1 auto;
+  align-self: auto;
 }
 
 .sidebar {
   background-color: pink;
-  grid-area: S;
+  /* grid-area: S; */
+
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
 }
