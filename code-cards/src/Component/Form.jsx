@@ -1,9 +1,9 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import axios from "axios";
 import { baseURL, config } from "../services"
 import { useHistory } from "react-router-dom";
 
-function Form(props) {
+function Form() {
   let [newCard, setNewBook] = useState({
     categories: "",
     word: "",

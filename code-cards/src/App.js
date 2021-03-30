@@ -6,7 +6,7 @@ import Footer from './Component/Footer'
 import Header from './Component/Header'
 import Form from './Component/Form'
 import Categories from './Component/Categories'
-import Flashcard from './Component/Flashcard'
+import CategoryDetail from './Component/CategoryDetail'
 import { baseURL, config } from "./services"
 import {useState, useEffect} from 'react'
 function App() {
@@ -26,74 +26,52 @@ function App() {
   return (
     <div className="App">
       <Header />
+
       <Route exact path ="/">
+        <Categories />
+      </Route>
+
         {/* render categories */}
-      <Categories />
-        </Route>
+        {/* run callback function for each thing if return is truth it will include that in the filtered array 
+        each card will check if true itll come through array */}   
       <Route path ="/arrays">
-        {/* render categories */}
-        {cards.map((card) => {
-          console.log(card)
-          // filter(category=> category.includes("Arrays")) 
-          //figure out how to filter each category 
-          /// tried includes 
-          // tried filter 
-          return <Flashcard card={card}
-            key={card.id} />;
-         
-        
-        })}
+        <CategoryDetail cards={cards.filter(card => card.fields.categories === "Arrays")}/>
       </Route>
+
       <Route path ="/objects">
-        {/* render categories */}
-        {cards.map((card)=>{
-          return <Flashcard card={card} key={card.id} />;
-        })}
+        <CategoryDetail cards={cards.filter(card => card.fields.categories === "Objects")} />
       </Route>
+
       <Route path ="/functions">
-        {/* render categories */}
-        {cards.map((card)=>{
-          return <Flashcard card={card} key={card.id} />;
-        })}
+        <CategoryDetail cards={cards.filter(card => card.fields.categories === "Functions")} />
       </Route>
+
       <Route path ="/statements">
-        {/* render categories */}
-        {cards.map((card)=>{
-          return <Flashcard card={card} key={card.id} />;
-        })}
+        <CategoryDetail cards={cards.filter(card => card.fields.categories === "Statements")} />
       </Route>
+
       <Route path ="/expressions">
-        {/* render categories */}
-        {cards.map((card)=>{
-          return <Flashcard card={card} key={card.id} />;
-        })}
+        <CategoryDetail cards={cards.filter(card => card.fields.categories === "Expressions & Operators")} />
       </Route>
+
       <Route path ="/loops">
-        {/* render categories */}
-        {cards.map((card)=>{
-          return <Flashcard card={card} key={card.id} />;
-        })}
+        <CategoryDetail cards={cards.filter(card => card.fields.categories === "Loops")} />
       </Route>
+
       <Route path ="/dom">
-        {/* render categories */}
-        {cards.map((card)=>{
-          return <Flashcard card={card} key={card.id} />;
-        })}
+        <CategoryDetail cards={cards.filter(card => card.fields.categories === "The DOM")} />
       </Route>
+
       <Route path ="/react">
-        {/* render categories */}
-        {cards.map((card)=>{
-          return <Flashcard card={card} key={card.id} />;
-        })}
+        <CategoryDetail cards={cards.filter(card => card.fields.categories === "React")} />
       </Route>
+
       <Route path ="/types">
-        {/* render categories */}
-        {cards.map((card)=>{
-          return <Flashcard card={card} key={card.id} />;
-        })}
+        <CategoryDetail cards={cards.filter(card => card.fields.categories === "Types, Values, & Variables")} />
       </Route>
+
       <Route path="/new">
-        <Form />
+        <Form cards={cards }/>
       </Route>
       
       <p>Hello</p>

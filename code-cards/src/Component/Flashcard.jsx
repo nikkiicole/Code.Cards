@@ -2,10 +2,10 @@
 
 function Flashcard(props) {
 
-  let data = props.card.fields;
+  let data = props.card.fields || null;
   console.log(data)
 
-  return (
+  return data && (
     <div>
       
       <ul>
