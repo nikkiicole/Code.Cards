@@ -1,18 +1,22 @@
 import Button from './Button'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import "./Header.css"
 
 const Header = () => {
   return (
     
-    <div>
+    <div className="topnav">
 
       {/* /// find a way to on render only display add cards button and when on add cards return home */}
+
       {/* this will wrap the Logo */}
-      <Link to="/">Home</Link>
+      <h1><Link to="/"><Button text='Home' /></Link></h1>
       {/* <Link to="/flashcard">Flashcard</Link> */}
-      <Link to = "/new"><Button color='grey' text='Add Cards' /></Link>
-      This is my nav/header
+      <h1>Code.Cards</h1>
+      <Link to = "/new"><Button text='Add Cards' /></Link>
       
+    
+
     </div>
   )
 }

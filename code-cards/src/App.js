@@ -7,8 +7,10 @@ import Header from './Component/Header'
 import Form from './Component/Form'
 import Categories from './Component/Categories'
 import CategoryDetail from './Component/CategoryDetail'
+import BelowHeader from './Component/BelowHeader'
 import { baseURL, config } from "./services"
-import {useState, useEffect} from 'react'
+import { useState, useEffect } from 'react'
+
 function App() {
   
   const [cards, setCards] = useState([]);
@@ -26,6 +28,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+<BelowHeader />
 
       <Route exact path ="/">
         <Categories />

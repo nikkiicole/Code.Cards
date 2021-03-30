@@ -1,4 +1,6 @@
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import "./Categories.css"
+
 
 function Categories() {
   //pass in props 
@@ -6,21 +8,26 @@ function Categories() {
   
   
   return (
-    <div>
+    <div className="div-container">
 
-      <ul>
-        <li><Link to="/arrays">Arrays</Link></li>
-        <li><Link to="/objects">Objects</Link></li>
-        <li><Link to="/functions">Functions</Link></li>
-        <li><Link to="/statements">Statements</Link></li>
-        <li><Link to="/expressions">Expressions and Operators</Link></li>
-        <li><Link to="/loops">Loops</Link></li>
-        <li><Link to="/dom">The DOM</Link></li>
-        <li><Link to="/react">React</Link></li>
-        <li><Link to="/types">Types, Values, and Variables</Link></li>
-      </ul>
+  
+      <div className="category"><Link className="cat-links" to="/arrays" >Arrays</Link></div>
+      
+        <div className="category"><Link className="cat-links" to="/objects">Objects</Link></div>
+        <div className="category"><Link className="cat-links" to="/functions">Functions</Link></div>
+        <div className="category"><Link className="cat-links" to="/statements">Statements</Link></div>
+        <div className="category"><Link className="cat-links" to="/expressions">Expressions and Operators</Link></div>
+        <div className="category"><Link className="cat-links" to="/loops">Loops</Link></div>
+        <div className="category"><Link className="cat-links" to="/dom">The DOM</Link></div>
+        <div className="category"><Link className="cat-links" to="/react">React</Link></div>
+        <div className="category"><Link className="cat-links" to="/types">Types, Values, and Variables</Link></div>
+  
     </div>
   )
 }
+
+
+
+
 
 export default Categories

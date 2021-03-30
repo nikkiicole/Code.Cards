@@ -1,0 +1,23 @@
+.div-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: stretch;
+  align-items: center;
+  background-color: black;
+  height: 500px;
+  margin: 20px;
+}
+
+.category {
+  background-color: pink;
+  width: 30%;
+  height: 30%;
+  margin: 5px;
+}
+
+.cat-links {
+  text-decoration: none;
+  font-size: 30px;
+}
