@@ -1,5 +1,4 @@
-import React from 'react'
-import "./Categories.css"
+import "./CategoryDetail.css"
 
 function Sidebar(props) {
   return (

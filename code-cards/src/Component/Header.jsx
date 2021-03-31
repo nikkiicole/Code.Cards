@@ -10,7 +10,7 @@ const Header = () => {
       {/* /// find a way to on render only display add cards button and when on add cards return home */}
 
       {/* this will wrap the Logo */}
-      <h2><Link to="/"><Button text='Home' /></Link></h2>
+      <Link to="/"><Button text='Home' /></Link>
       {/* <Link to="/flashcard">Flashcard</Link> */}
       <h1>Code.Cards</h1>
 
