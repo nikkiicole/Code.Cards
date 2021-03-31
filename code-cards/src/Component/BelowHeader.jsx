@@ -2,7 +2,7 @@ import "./Header.css"
 
 function BelowHeader() {
   return (
-    <div>
+    <div className="wrapper">
     <header className="backgroundheader">
         <h2> Code.Cards, your interactive flashcard experience for learning developers!</h2>
       </header>

@@ -3,10 +3,7 @@ import "./Categories.css"
 
 
 function Categories() {
-  //pass in props 
-  //console.log to check state of props
-  
-  
+
   return (
     <div className="div-container">
 

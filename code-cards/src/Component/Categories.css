@@ -25,6 +25,23 @@
   text-decoration: none;
   font-size: 28px;
   color: white;
-  padding-top: 30px;
+  padding-top: 35px;
   font-family: "Staatliches", cursive;
+}
+
+@media screen and (max-width: 500px) {
+  .div-container {
+    /* weird spacing to the right */
+    margin-left: 60px;
+    margin-right: 0px;
+    height: 1300px;
+  }
+  .category {
+    font-size: 25px;
+  }
+  .cat-links {
+    width: 90%;
+    height: 9%;
+    margin-bottom: 20px;
+  }
 }
