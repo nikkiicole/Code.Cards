@@ -5,7 +5,7 @@ import { useHistory } from "react-router-dom";
 import "./Form.css"
 
 function Form(props) {
-  let [newCard, setNewBook] = useState({
+  let [newCard, setNewCard] = useState({
     categories: "",
     word: "",
     definition: "",
@@ -13,13 +13,14 @@ function Form(props) {
     secondresource: "",
     thirdresource: "",
   });
-  
+
+// pushes user back to homepage 
   const history = useHistory()
 
   function handleInput(event) {
 
     let { id, value } = event.target;
-    setNewBook((prevState) => ({ ...prevState, [id]: value }));
+    setNewCard((prevState) => ({ ...prevState, [id]: value }));
 }
   async function handleSubmit(event) {
     event.preventDefault()
@@ -30,7 +31,7 @@ function Form(props) {
 }
   return (
     <div className="body-color">
-      <h2 class="form-title">Submit Your Own Card!</h2>
+      <h2 className="form-title">Submit Your Own Card!</h2>
       <div className="form-container">
       <form className="form" onSubmit={handleSubmit}>
         <p className="p-topic">Topic</p>
@@ -49,7 +50,7 @@ function Form(props) {
       <input className="input" type="text" id="word" required onChange={handleInput} value={newCard.word} />
 
       <label className="label"htmlFor="definition">Definition </label>
-      <textarea  rows="5" className="input"type="text" id="definition" required onChange={handleInput} value={newCard.definition} />
+      <textarea  rows="3" className="input"type="text" id="definition" required onChange={handleInput} value={newCard.definition} />
 
       <label className="label"htmlFor="firstresource">First Resource </label>
       <input className="input"type="url" id="firstresource"  placeholder="url" required onChange={handleInput} value={newCard.firstresource} />

@@ -1,4 +1,4 @@
-import "./Flashcard"
+
 
 function Definition (props) {
   let data = props.card.fields || null;

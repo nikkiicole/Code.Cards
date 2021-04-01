@@ -18,10 +18,11 @@ function CategoryDetail({ cards }) {
       </div>
       
   <div className="margin-control">
-      <div className="cards-container">
+        <div className="cards-container">
+          {/* This Flippy Component is the package that controls the flip motion of the card */}
         <Flippy className="flippy-container"
-flipOnHover={false} // default false
-flipOnClick={true} // default false
+flipOnHover={false} 
+flipOnClick={true}
 flipDirection="vertical" // horizontal or vertical          
         >
 
