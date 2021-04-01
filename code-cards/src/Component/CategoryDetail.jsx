@@ -1,5 +1,5 @@
 // import Flashcard from "./Flashcard"
-import Sidebar from "./Sidebar"
+import Topbar from "./Topbar"
 import Resources from "./Resources"
 import Word from "./Word"
 import Definition from "./Definition"
@@ -14,9 +14,9 @@ function CategoryDetail({ cards }) {
     <div>
    
      
-<div className="sidebar-container">
+<div className="topbar-container">
         
-      <Sidebar cards={cards} setSelectedCard={setSelectedCard} />
+      <Topbar cards={cards} setSelectedCard={setSelectedCard} />
       {/* <Flashcard card={selectedCard} /> */}
       {/* {cards.map((card) => {
           console.log(card)
@@ -25,7 +25,7 @@ function CategoryDetail({ cards }) {
         
         })} */}
       </div>
-      
+      <div className="margin-control">
       <div className="cards-container">
   <Flippy className="flippy-container"
     flipOnHover={false} // default false
@@ -42,7 +42,8 @@ function CategoryDetail({ cards }) {
         <Definition card={selectedCard} />
     </BackSide>
   </Flippy>
-     </div>
+      </div>
+      </div>
 <div className="resources-container">
       <Resources card={selectedCard}/>
     

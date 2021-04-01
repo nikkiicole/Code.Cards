@@ -17,6 +17,9 @@
   width: 31%;
   height: 30%;
   margin: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* how to center text in the middle of the box */
@@ -25,7 +28,7 @@
   text-decoration: none;
   font-size: 28px;
   color: white;
-  padding-top: 35px;
+  /* padding-top: 35px; */
   font-family: "Staatliches", cursive;
 }
 
@@ -43,6 +46,6 @@
   .cat-links {
     width: 90%;
     height: 9%;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
   }
 }

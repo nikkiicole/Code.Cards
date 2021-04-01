@@ -4,7 +4,7 @@ import { baseURL, config } from "../services"
 import { useHistory } from "react-router-dom";
 import "./Form.css"
 
-function Form() {
+function Form(props) {
   let [newCard, setNewBook] = useState({
     categories: "",
     word: "",
@@ -25,17 +25,17 @@ function Form() {
     event.preventDefault()
     
     await axios.post(baseURL, { fields: newCard }, config);
+    props.setToggle((prevState)=> !prevState)
     history.push("/")
 }
   return (
     <div className="body-color">
-      <h1>Submit Your Own Card!</h1>
+      <h2 class="form-title">Submit Your Own Card!</h2>
       <div className="form-container">
       <form className="form" onSubmit={handleSubmit}>
-        {/* <p>Topic</p> */}
+        <p className="p-topic">Topic</p>
         <select className="input-select" id="categories" required onChange={handleInput} value={newCard.categories}>
-        <option defaultValue>Select Topic</option>
-        <option value = "Types, Values, and Variables" >Types, Values, and Variables</option>
+        <option value = "Types, Values, and Variables" defaultValue>Types, Values, and Variables</option>
         <option value = "Objects">Objects</option>
         <option value="Expressions and Operators">Expressions and Operators</option>
         <option value="Arrays">Arrays </option>
@@ -49,10 +49,10 @@ function Form() {
       <input className="input" type="text" id="word" required onChange={handleInput} value={newCard.word} />
 
       <label className="label"htmlFor="definition">Definition </label>
-      <input className="input"type="text" id="definition" required onChange={handleInput} value={newCard.definition} />
+      <textarea  rows="5" className="input"type="text" id="definition" required onChange={handleInput} value={newCard.definition} />
 
       <label className="label"htmlFor="firstresource">First Resource </label>
-      <input className="input"type="url" id="firstresource" placeholder="url" required onChange={handleInput} value={newCard.firstresource} />
+      <input className="input"type="url" id="firstresource"  placeholder="url" required onChange={handleInput} value={newCard.firstresource} />
 
       <label className="label"htmlFor="secondresource">Second Resource </label>
       <input className="input"type="url" id="secondresource" placeholder="url" required onChange={handleInput} value={newCard.secondresource} />

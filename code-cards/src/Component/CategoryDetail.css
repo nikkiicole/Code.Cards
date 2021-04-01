@@ -1,24 +1,16 @@
 .cards-container {
   background-color: rgb(0, 0, 0);
-
-  /* grid-template-areas:
-    "S C"
-    "S C"
-    "S C";
-
-  grid-template-columns: 150px 1fr; */
-
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
   align-content: center;
   align-items: center;
-  /* margin-left: 50px;
-  margin-right: 50px; */
-  width: 100%;
+  /* margin-left: 200px;
+  margin-right: 200px; */
+  width: 60%;
 }
-.sidebar-container {
+.topbar-container {
   width: 100%;
 }
 
@@ -33,24 +25,37 @@
   margin-top: 40px;
   margin-bottom: 40px;
   width: 100%;
-  height: 350px;
+  height: 300px;
 
   margin-left: 50px;
   margin-right: 50px;
 
   max-width: 400px;
 }
-.flashcard {
-  /* background-color: rgb(92, 52, 52); */
+.margin-control {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
 
+.flippy-back,
+.flippy-front {
+  display: flex;
+  align-items: center;
+}
+
+.flippy-front h2 {
+  font-size: 40px;
+  font-family: "Staatliches", cursive;
+}
+.flashcard {
   order: 0;
   flex: 2 1 auto;
   align-self: auto;
-  padding: 40px;
-  font-family: "Poppins", sans-serif;
 }
-
-.sidebar {
+.topbar {
   background-color: rgb(255, 255, 255);
   /* grid-area: S; */
   width: 100%;
@@ -71,28 +76,36 @@
   margin-top: 10px;
 }
 
-.resources {
+a.resources {
   color: rgb(0, 0, 0);
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   /* padding-right: 5px; */
+  word-wrap: break-word;
 
-  text-align: center;
+  max-width: 90vw;
+  text-overflow: ellipsis;
 }
 
-.resources:hover {
+a.resources:hover {
   text-decoration: underline;
 }
+li.resources-m {
+  margin-bottom: 15px;
+}
 .resources-container {
-  /* list-style-type: none; */
+  list-style-type: none;
   /* display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: center;
   align-items: center; */
+
+  overflow: wrap;
+  margin: 15px;
 }
-.sidebar-buttons {
+.topbar-buttons {
   background-color: black;
   color: white;
   height: 50px;
@@ -103,15 +116,18 @@
   margin-top: 10px;
   margin-bottom: 20px;
   font-family: "Poppins", sans-serif;
+  outline: none;
 }
 .button-words {
   color: white;
 }
 
 @media screen and (max-width: 500px) {
-  .resources {
+  a.resources {
     font-size: 14px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+    max-width: 90vw;
+    word-wrap: break-word;
   }
 
   .flashcard {
@@ -119,7 +135,17 @@
     font-size: 14px;
   }
 
-  .flippy-container {
-    height: 400px;
+  .resources-container {
+    max-width: 90%;
+    overflow: wrap;
+    list-style-type: disc;
+    margin: 5px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .cards-container {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
   }
 }

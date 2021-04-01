@@ -14,10 +14,12 @@ import { useState, useEffect } from 'react'
 function App() {
   
   const [cards, setCards] = useState([]);
+  //this is used to togglle between true and flase this resolves the refresh issue
+  const [toggle, setToggle] = useState(false);
 
   useEffect(() => {
     getData();
-  }, []);
+  }, [toggle]);
 
   async function getData() {
     let response = await axios.get(baseURL, config);
@@ -74,7 +76,7 @@ function App() {
       </Route>
 
       <Route path="/new">
-        <Form cards={cards }/>
+        <Form setToggle={setToggle} cards={cards }/>
       </Route>
       
       

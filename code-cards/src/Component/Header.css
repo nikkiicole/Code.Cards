@@ -62,6 +62,7 @@ body {
   outline: none;
   margin: 5px;
   height: 55px;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 500px) {
@@ -73,7 +74,7 @@ body {
     font-size: 18px;
   }
   .header-buttons {
-    font-size: 18px;
+    font-size: 16px;
   }
   .backgroundheader {
     height: 400px;
