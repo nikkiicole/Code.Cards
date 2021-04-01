@@ -13,7 +13,6 @@ footer {
   height: 110px;
   margin-bottom: 0px;
   margin-top: 50px;
-  /* height: 100%; */
   margin-left: 0px;
   margin-right: 0px;
 }
@@ -53,12 +52,8 @@ footer {
 @media screen and (max-width: 500px) {
   .Me {
     font-size: 12px;
-    /* padding-left: 0px; */
   }
   .Email {
     font-size: 12px;
-    /* padding-right: 0px; */
   }
-  /* footer {
-  } */
 }

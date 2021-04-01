@@ -12,8 +12,8 @@ function Form(props) {
     firstresource: "",
     secondresource: "",
     thirdresource: "",
-
   });
+  
   const history = useHistory()
 
   function handleInput(event) {

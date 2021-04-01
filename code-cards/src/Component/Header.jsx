@@ -4,20 +4,10 @@ import "./Header.css"
 
 const Header = () => {
   return (
-    
     <div className="topnav">
-
-      {/* /// find a way to on render only display add cards button and when on add cards return home */}
-
-      {/* this will wrap the Logo */}
       <Link to="/"><Button text='Home' /></Link>
-      {/* <Link to="/flashcard">Flashcard</Link> */}
       <h1>Code.Cards</h1>
-
       <Link to = "/new"><Button text='Add Cards' /></Link>
-      
-    
-
     </div>
   )
 }

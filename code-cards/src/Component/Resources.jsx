@@ -1,5 +1,4 @@
 import React from 'react'
-// import "./Flashcard"
 
 function Resources (props) {
   let data = props.card.fields || null;

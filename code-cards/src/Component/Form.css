@@ -46,7 +46,7 @@
 .label {
   color: white;
   font-size: 25px;
-  ffont-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .input {
@@ -54,7 +54,6 @@
   width: 80%;
   margin-bottom: 15px;
   outline: none;
-  /* padding-bottom: 30px; */
 }
 
 .submit {

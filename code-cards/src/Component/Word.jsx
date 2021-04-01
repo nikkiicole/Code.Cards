@@ -1,6 +1,3 @@
-import React from 'react'
-import "./Flashcard"
-
 
 function Word (props){
   let data = props.card.fields || null;
