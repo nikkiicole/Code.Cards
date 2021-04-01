@@ -32,7 +32,7 @@
 .form {
   background-color: rgb(0, 0, 0);
   height: 95%;
-  width: 40%;
+  width: 60%;
   margin-top: 40px;
   display: flex;
   flex-direction: column;
@@ -94,12 +94,14 @@
 }
 
 @media screen and (max-width: 500px) {
-  .form {
-    width: 85%;
-  }
-
   .label,
   .p-topic {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .form {
+    width: 85%;
   }
 }

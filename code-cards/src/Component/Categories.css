@@ -22,20 +22,15 @@
   justify-content: center;
 }
 
-/* how to center text in the middle of the box */
-
 .category {
   text-decoration: none;
   font-size: 28px;
   color: white;
-  /* padding-top: 35px; */
   font-family: "Staatliches", cursive;
 }
 
 @media screen and (max-width: 500px) {
   .div-container {
-    /* weird spacing to the right only able to rectify with below margin */
-    /* margin-left: 60px; */
     margin-right: 0px;
     margin-left: 0px;
     height: 1300px;
@@ -46,6 +41,5 @@
   .cat-links {
     width: 90%;
     height: 9%;
-    /* margin-bottom: 15px; */
   }
 }

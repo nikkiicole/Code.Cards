@@ -6,8 +6,6 @@
   justify-content: center;
   align-content: center;
   align-items: center;
-  /* margin-left: 200px;
-  margin-right: 200px; */
   width: 60%;
 }
 .topbar-container {
@@ -30,7 +28,7 @@
   margin-left: 50px;
   margin-right: 50px;
 
-  max-width: 400px;
+  max-width: 600px;
 }
 .margin-control {
   width: 100%;
@@ -47,8 +45,12 @@
 }
 
 .flippy-front h2 {
-  font-size: 40px;
+  font-size: 45px;
   font-family: "Staatliches", cursive;
+}
+
+.flippy-back {
+  font-size: 22px;
 }
 .flashcard {
   order: 0;
@@ -57,8 +59,9 @@
 }
 .topbar {
   background-color: rgb(255, 255, 255);
-  /* grid-area: S; */
   width: 100%;
+  margin-top: 10px;
+
   order: 0;
   flex: 0 1 auto;
   align-self: auto;
@@ -70,19 +73,13 @@
   justify-content: space-around;
   align-content: center;
   align-items: center;
-
-  /* height: 300px; */
-
-  margin-top: 10px;
 }
 
 a.resources {
   color: rgb(0, 0, 0);
   font-family: "Poppins", sans-serif;
   font-size: 16px;
-  /* padding-right: 5px; */
   word-wrap: break-word;
-
   max-width: 90vw;
   text-overflow: ellipsis;
 }
@@ -95,13 +92,6 @@ li.resources-m {
 }
 .resources-container {
   list-style-type: none;
-  /* display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: center;
-  align-items: center; */
-
   overflow: wrap;
   margin: 15px;
 }
@@ -113,9 +103,10 @@ li.resources-m {
   order: 0;
   flex: 0 1 auto;
   align-self: auto;
-  margin-top: 10px;
+  margin-top: 15px;
   margin-bottom: 20px;
   font-family: "Poppins", sans-serif;
+  font-size: 22px;
   outline: none;
 }
 .button-words {
@@ -147,5 +138,8 @@ li.resources-m {
     margin-left: 0px;
     margin-right: 0px;
     width: 100%;
+  }
+  .topbar-buttons {
+    font-size: 16px;
   }
 }

@@ -6,7 +6,7 @@ function Definition (props) {
 
   return data &&(
     <div className="flashcard">
-      <p>{data.definition}</p>
+      <p className="definition">{data.definition}</p>
     </div>
   )
 }
