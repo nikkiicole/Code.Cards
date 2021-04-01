@@ -1,3 +1,4 @@
+import React from 'react'
 
 function Word (props){
   let data = props.card.fields || null;

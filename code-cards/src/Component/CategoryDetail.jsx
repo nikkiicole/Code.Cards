@@ -1,5 +1,6 @@
 import { useState } from "react"
 import Flippy, { FrontSide, BackSide } from 'react-flippy';
+import React from 'react'
 
 import Topbar from "./Topbar"
 import Resources from "./Resources"

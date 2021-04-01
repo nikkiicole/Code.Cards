@@ -1,4 +1,4 @@
-
+import React from 'react'
 
 function Definition (props) {
   let data = props.card.fields || null;
