@@ -8,6 +8,7 @@
   align-items: center;
   width: 60%;
 }
+
 .topbar-container {
   width: 100%;
 }
@@ -113,6 +114,17 @@ li.resources-m {
   color: white;
 }
 
+@media screen and (max-width: 850px) {
+  .cards-container {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+  }
+  .topbar-buttons {
+    font-size: 16px;
+  }
+}
+
 @media screen and (max-width: 500px) {
   a.resources {
     font-size: 14px;
@@ -131,15 +143,5 @@ li.resources-m {
     overflow: wrap;
     list-style-type: disc;
     margin: 5px;
-  }
-}
-@media screen and (max-width: 850px) {
-  .cards-container {
-    margin-left: 0px;
-    margin-right: 0px;
-    width: 100%;
-  }
-  .topbar-buttons {
-    font-size: 16px;
   }
 }
