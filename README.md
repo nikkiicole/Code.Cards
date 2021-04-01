@@ -18,7 +18,7 @@ The home page will contain a header with a button navigating to add a card in th
 
 Flashcard Page:
 
-The flashcard page will have a sidebar that allows the user to select the card they want to view it will also contain a card component that will hold the card definition and name. The card will have a flip button revealing the card details to the user. There will also be left and right arrows that allows for the user to cycle through the cards available in the current topic they are in. At the bottom of that the page will have 3 resource links for the user to read more on each card.
+The flashcard page will have a topbar that allows the user to select the card they want to view it will also contain a card component that will hold the card definition and name. The card will have a flip button revealing the card details to the user. At the bottom of that the page will have 3 resource links for the user to read more on each card.
 
 ![alt text](https://res.cloudinary.com/dbmxg3su8/image/upload/v1616761720/Screen_Shot_2021-03-26_at_8.27.51_AM_njxjjg.png "Flashcard Page Wireframe")
 
@@ -115,36 +115,35 @@ This schedule will be used to keep track of your progress throughout the week an
 | Day      | Deliverable                                                              | Status     |
 | -------- | ------------------------------------------------------------------------ | ---------- |
 | March 25 | Prompt / Complete Pitch                                                  | Complete   |
-| March 26 | Pitch / Project Approval                                                 | Incomplete |
-| March 26 | Complete API Creation / File Structure / Skeleton Structure / Psuedocode | Incomplete |
-| March 27 | Styling                                                                  | Incomplete |
-| March 28 | All Psudocode translated to real code                                    | Incomplete |
-| March 29 | Testing Complete                                                         | Incomplete |
-| March 30 | MVP                                                                      | Incomplete |
-| March 31 | Post MVP Work                                                            | Incomplete |
-| April 1  | Final Polishing / Deployment                                             | Incomplete |
+| March 26 | Pitch / Project Approval                                                 | Complete   |
+| March 26 | Complete API Creation / File Structure / Skeleton Structure / Psuedocode | Complete   |
+| March 27 | Styling                                                                  | Complete   |
+| March 28 | All Psudocode translated to real code                                    | Complete   |
+| March 29 | Testing Complete                                                         | Complete   |
+| March 30 | MVP                                                                      | Complete   |
+| March 31 | Post MVP Work                                                            | Complete   |
+| April 1  | Final Polishing / Deployment                                             | Complete   |
 | April 2  | Presentations                                                            | Incomplete |
 
 ## Timeframes
 
 | Component                       | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Adding Form                     |    H     |      3hrs      |               |             |
-| Working with API & Creating Api |    H     |      6hrs      |               |             |
-| Working with File Structure     |    H     |      3hrs      |               |             |
-| Setting frame/skeleton          |    H     |      3hrs      |               |             |
-| Creating Components             |    H     |      3hrs      |               |             |
-| Working out Routing & Paths     |    H     |      4hrs      |               |             |
-| Organizing                      |    H     |      3hrs      |               |             |
-| Linking Second HTML Page        |    H     |     .5hrs      |               |             |
-| Creating Form                   |    H     |      1hrs      |               |             |
-| Working with State              |    H     |      3hrs      |               |             |
-| Working with CSS Format         |    H     |      5hrs      |               |             |
-| Polishing Design                |    M     |      5hrs      |               |             |
-| Debugging                       |    H     |      3hrs      |               |             |
-| Cleaning Code & Refactoring     |    M     |      2hrs      |               |             |
-| Testing                         |    H     |      1hrs      |               |             |
-| Total                           |    H     |    45.5hrs     |               |             |
+| Adding Form                     |    H     |      3hrs      |    3hrs            |     3hrs         |
+| Working with API & Creating Api |    H     |      6hrs      |         6hrs         |      6hrs          |
+| Working with File Structure     |    H     |      3hrs      |         4hrs        |     4hrs          |
+| Setting frame/skeleton          |    H     |      3hrs      |       3hrs            |      3hrs           |
+| Creating Components             |    H     |      3hrs      |       3hrs           |        3hrs        |
+| Working out Routing & Paths     |    H     |      4hrs      |         2hrs        |    2hrs         |
+| Organizing                      |    H     |      3hrs      |           3hrs       |         3hrs       |
+| Creating Form                   |    H     |      1hrs      |      2hrs          |    2hrs         |
+| Working with State              |    H     |      3hrs      |         2hrs         |        2hrs          |
+| Working with CSS Format         |    H     |      5hrs      |       10hrs           |     10hrs        |
+| Polishing Design                |    M     |      5hrs      |      2hrs          |        2hrs     |
+| Debugging                       |    H     |      3hrs      |      4hrs             |        4hrs     |
+| Cleaning Code & Refactoring     |    M     |      2hrs      |   1hrs            |      1hr       |
+| Testing                         |    H     |      1hrs      |            1hrs      |        1hrs        |
+| Total                           |         |    45.5hrs     |      46hrs         |     46hrs        |
 
 ## SWOT Analysis
 
@@ -155,11 +154,11 @@ A practical idea
 
 ### Weaknesses:
 
-Possibility of over simplifying functionality. Figuring out react in the scope of this project. Making airtable work the way i want to.
+Figuring out react in the scope of this project. Making airtable work the way I want it to.
 
 ### Opportunities:
 
-Post MVP achievements and additional styling like animation.
+Post MVP achievements and additional styling like animation. Making ths design more modern.
 
 ### Threats:
 
