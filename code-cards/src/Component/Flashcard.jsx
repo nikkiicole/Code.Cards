@@ -1,31 +1,31 @@
 
 
-function Flashcard(props) {
+// function Flashcard(props) {
 
-  let data = props.card.fields || null;
-  console.log(data)
+//   let data = props.card.fields || null;
+//   console.log(data)
 
-  return data && (
-    <div className="flashcard">
+//   return data && (
+//     <div className="flashcard">
       
-    {/* <ul>
-      <li>
-      {data.categories}
-      </li>
-    </ul> */}
+//     {/* <ul>
+//       <li>
+//       {data.categories}
+//       </li>
+//     </ul> */}
     
-    <h2>{data.word}</h2>
-    <p>{data.definition}</p>
+//     <h2>{data.word}</h2>
+//     <p>{data.definition}</p>
     
-      {/* <h3>Resources:</h3>
-    <div>
-      <p>{data.firstresource}</p>
-      <p>{data.secondresource}</p>
-      <p>{ data.thirdresource}</p>
-    </div> */}
-    </div>
+//       {/* <h3>Resources:</h3>
+//     <div>
+//       <p>{data.firstresource}</p>
+//       <p>{data.secondresource}</p>
+//       <p>{ data.thirdresource}</p>
+//     </div> */}
+//     </div>
   
-  )
-}
+//   )
+// }
 
-export default Flashcard
+// export default Flashcard

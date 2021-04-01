@@ -5,13 +5,13 @@ function Resources (props) {
   let data = props.card.fields || null;
 
   return data &&(
-    <div>
-        <h3 className="resources">Resources:</h3>
-      <div>
-        <p className="resources">{data.firstresource}</p>
-        <p className="resources">{data.secondresource}</p>
-        <p className="resources">{ data.thirdresource}</p>
-      </div> 
+    <div >
+        <h3 className="resources-header">Resources:</h3>
+      <ul className="resources-container">
+      <li><a className="resources" target="_blank" rel="noreferrer" href={data.firstresource}>{data.firstresource}</a></li>
+        <li><a className="resources" target="_blank" rel="noreferrer" href={data.secondresource}>{data.secondresource}</a></li>
+       <li><a className="resources" target="_blank" rel="noreferrer" href={ data.thirdresource}>{ data.thirdresource}</a></li>
+      </ul> 
     </div>
   )
 }

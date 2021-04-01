@@ -32,8 +32,9 @@
 @media screen and (max-width: 500px) {
   .div-container {
     /* weird spacing to the right only able to rectify with below margin */
-    margin-left: 60px;
+    /* margin-left: 60px; */
     margin-right: 0px;
+    margin-left: 0px;
     height: 1300px;
   }
   .category {
@@ -42,6 +43,6 @@
   .cat-links {
     width: 90%;
     height: 9%;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 }

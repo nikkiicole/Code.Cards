@@ -52,13 +52,13 @@ footer {
 
 @media screen and (max-width: 500px) {
   .Me {
-    font-size: 15px;
-    padding-left: 0px;
+    font-size: 12px;
+    /* padding-left: 0px; */
   }
   .Email {
-    font-size: 15px;
-    padding-right: 0px;
+    font-size: 12px;
+    /* padding-right: 0px; */
   }
-  footer {
-  }
+  /* footer {
+  } */
 }

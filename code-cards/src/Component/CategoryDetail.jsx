@@ -1,4 +1,4 @@
-import Flashcard from "./Flashcard"
+// import Flashcard from "./Flashcard"
 import Sidebar from "./Sidebar"
 import Resources from "./Resources"
 import Word from "./Word"
@@ -14,7 +14,7 @@ function CategoryDetail({ cards }) {
     <div>
    
      
-
+<div className="sidebar-container">
         
       <Sidebar cards={cards} setSelectedCard={setSelectedCard} />
       {/* <Flashcard card={selectedCard} /> */}
@@ -24,7 +24,8 @@ function CategoryDetail({ cards }) {
             key={card.id} />; 
         
         })} */}
-
+      </div>
+      
       <div className="cards-container">
   <Flippy className="flippy-container"
     flipOnHover={false} // default false
@@ -42,9 +43,13 @@ function CategoryDetail({ cards }) {
     </BackSide>
   </Flippy>
      </div>
-
+<div className="resources-container">
       <Resources card={selectedCard}/>
     
+     </div> 
+
+
+
     </div>
   )
 }
