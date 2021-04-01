@@ -1,20 +1,19 @@
-
-import './App.css';
 import axios from 'axios'
 import {Route} from "react-router-dom"
+import { useState, useEffect } from 'react'
+import { baseURL, config } from "./services"
+
 import Footer from './Component/Footer'
 import Header from './Component/Header'
 import Form from './Component/Form'
 import Categories from './Component/Categories'
 import CategoryDetail from './Component/CategoryDetail'
 import BelowHeader from './Component/BelowHeader'
-import { baseURL, config } from "./services"
-import { useState, useEffect } from 'react'
+import './App.css';
 
 function App() {
   
   const [cards, setCards] = useState([]);
-  //this is used to togglle between true and flase this resolves the refresh issue
   const [toggle, setToggle] = useState(false);
 
   useEffect(() => {
@@ -26,19 +25,15 @@ function App() {
     setCards(response.data.records);
   }
   // console.log(categories)
-  
   return (
     <div className="App">
       <Header />
-<BelowHeader />
+      <BelowHeader />
 
       <Route exact path ="/">
         <Categories />
       </Route>
 
-        {/* render categories */}
-        {/* run callback function for each thing if return is truth it will include that in the filtered array 
-        each card will check if true itll come through array */}   
       <Route path ="/arrays">
         <CategoryDetail cards={cards.filter(card => card.fields.categories === "Arrays")}/>
       </Route>
@@ -78,9 +73,8 @@ function App() {
       <Route path="/new">
         <Form setToggle={setToggle} cards={cards }/>
       </Route>
-      
-      
-        <Footer />
+
+      <Footer />
     </div>
   )
 }
