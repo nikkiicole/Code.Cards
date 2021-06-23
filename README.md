@@ -34,53 +34,6 @@ Components:
 
 ![alt text](https://res.cloudinary.com/dbmxg3su8/image/upload/v1616741153/CodeCards_ukgvxs.png "Components")
 
-## API and Data Sample
-
-Show us a snippet of JSON returned by your Airtable (you can find it under the API documentation) so we know you can access it and get the info you need. This **must** be properly formatted. An example is below:
-
-```json
-{
-  "records": [
-    {
-      "id": "recWXbpal3U346VCY",
-      "fields": {
-        "firstresource": "https://www.geeksforgeeks.org/javascript-boolean/#:~:text=Boolean%20is%20a%20datatype%20that,terms%20of%20true%20or%20false.",
-        "topic": "Types, Values, & Variables",
-        "secondresource": "https://www.w3schools.com/js/js_booleans.asp",
-        "name": "Boolean",
-        "definition": "Boolean is a datatype that returns either of two values i.e. true or false. In JavaScript, Boolean is used as a function to get the value of a variabl...",
-        "thirdresource": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean"
-      },
-      "createdTime": "2021-03-26T03:59:27.000Z"
-    },
-    {
-      "id": "recS39LOjADyjtVi6",
-      "fields": {
-        "firstresource": "https://www.geeksforgeeks.org/javascript-tostring-function/#:~:text=The%20toString()%20method%20in,representing%20the%20specified%20Number%20object.&t...",
-        "topic": "Types, Values, & Variables",
-        "secondresource": "https://www.w3schools.com/jsref/jsref_tostring_string.asp",
-        "name": "toString",
-        "definition": "The toString() method in Javascript is used with a number and converts the number to a string. It is used to return a string representing the specifie...",
-        "thirdresource": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String"
-      },
-      "createdTime": "2021-03-26T03:59:27.000Z"
-    },
-    {
-      "id": "recObn21Pr0PTIWj1",
-      "fields": {
-        "firstresource": "https://www.w3schools.com/js/js_variables.asp",
-        "topic": "Types, Values, & Variables",
-        "secondresource": "https://javascript.info/variables",
-        "name": "Variable",
-        "definition": "JavaScript variables are containers for storing data values.",
-        "thirdresource": "https://www.tutorialspoint.com/javascript/javascript_variables.htm"
-      },
-      "createdTime": "2021-03-26T03:59:27.000Z"
-    }
-  ],
-  "offset": "recObn21Pr0PTIWj1"
-}
-```
 
 ### MVP/PostMVP
 
@@ -114,8 +67,6 @@ This schedule will be used to keep track of your progress throughout the week an
 
 | Day      | Deliverable                                                              | Status     |
 | -------- | ------------------------------------------------------------------------ | ---------- |
-| March 25 | Prompt / Complete Pitch                                                  | Complete   |
-| March 26 | Pitch / Project Approval                                                 | Complete   |
 | March 26 | Complete API Creation / File Structure / Skeleton Structure / Psuedocode | Complete   |
 | March 27 | Styling                                                                  | Complete   |
 | March 28 | All Psudocode translated to real code                                    | Complete   |
